@@ -45,13 +45,14 @@ namespace IntroduccionLinQ
                                    orderby p.Id descending
                                    select new {
                                         p.Nombre,
-                                        Pais = p.Pais.Substring(0, 3).ToUpper()
+                                        Pais = p.Pais.Substring(0, 3).ToUpper(),
+                                        Id = p.Id + 1000
                                    };
 
             foreach (var item in personasColombia)
             {
                 //Console.WriteLine("Nombre: {0}({1}), Nacionalidad: {2}", item.Nombre, item.Id, item.Pais);
-                Console.WriteLine("Nombre: {0} ({1})", item.Nombre, item.Pais);
+                Console.WriteLine("{2} - Nombre: {0} ({1})", item.Nombre, item.Pais, item.Id);
             }
 
             Console.ReadKey();
