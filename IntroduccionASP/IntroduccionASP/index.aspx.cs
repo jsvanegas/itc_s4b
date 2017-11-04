@@ -11,7 +11,13 @@ namespace IntroduccionASP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            txtCaja1.Text = "Hola Mundo";
+        }
 
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            txtCaja2.Text = txtCaja1.Text;
+            txtCaja1.Text = "";
         }
     }
 }
