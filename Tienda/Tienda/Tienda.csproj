@@ -78,6 +78,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>TiendaModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="productos.aspx" />
     <Content Include="TiendaModel.edmx.diagram">
       <DependentUpon>TiendaModel.edmx</DependentUpon>
     </Content>
@@ -115,6 +116,13 @@
     </Compile>
     <Compile Include="Producto.cs">
       <DependentUpon>TiendaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productos.aspx.cs">
+      <DependentUpon>productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productos.aspx.designer.cs">
+      <DependentUpon>productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TiendaModel.Context.cs">
